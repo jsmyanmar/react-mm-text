@@ -1,0 +1,27 @@
+{
+  "name": "react-mm-text",
+  "version": "0.0.1-rc1",
+  "description": "A simple javascript library for myanmar unicode embedded. ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0"
+  },
+  "dependencies": {
+    "knayi-myscript": "^2.2.0",
+    "myanmar-tools": "^1.0.3",
+    "prop-types": "^15.6.1",
+    "rabbit-node": "^1.0.4",
+    "react": "^16.2.0"
+  }
+}
