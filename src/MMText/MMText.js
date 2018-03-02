@@ -21,6 +21,11 @@ class MMText extends React.Component {
       showText: null,
       inputFont: null,
     };
+
+    this._fontDetect =  this._fontDetect.bind(this);
+    this._checkConveter = this._checkConveter.bind(this);
+    this._convertWithRabbit = this._convertWithRabbit.bind(this);
+    this._convertWithKnayi = this._convertWithKnayi.bind(this);
   }
 
   componentWillMount() {
@@ -48,28 +53,28 @@ class MMText extends React.Component {
    *  - text - for detect
    *  - library - for choice library
    */
-   _fontDetect = (text, library) => {
-     if (library === 'knayi') {
-       const inputFont = knayi.fontDetect(text);
-       this.setState({ inputFont })
-     }
+  _fontDetect(text, library) {
+    if (library === 'knayi') {
+      const inputFont = knayi.fontDetect(text);
+      this.setState({ inputFont })
+    }
 
-     if (library === 'myanmar-tools') {
-       const zawgyiDetector = new google_myanmar_tools.ZawgyiDetector();
-       const score = zawgyiDetector.getZawgyiProbability(text);
+    if (library === 'myanmar-tools') {
+      const zawgyiDetector = new google_myanmar_tools.ZawgyiDetector();
+      const score = zawgyiDetector.getZawgyiProbability(text);
 
-       if(score.toFixed(6) == '1') {
-         this.setState({ inputFont: 'zawgyi' });
-       } else {
-         this.setState({ inputFont: 'unicode' });
-       }
-     }
-   }
+      if (score.toFixed(6) == '1') {
+        this.setState({ inputFont: 'zawgyi' });
+      } else {
+        this.setState({ inputFont: 'unicode' });
+      }
+    }
+  }
 
   /**
    * _fontConveter will convert with their choice library
    */
-  _checkConveter = (library) => {
+  _checkConveter(library) {
     if (library === 'rabbit') {
       this._convertWithRabbit();
     }
@@ -86,7 +91,7 @@ class MMText extends React.Component {
    *  - @url https://github.com/Rabbit-Converter/Rabbit-Node
    *
    */
-  _convertWithRabbit = () => {
+  _convertWithRabbit() {
     const {
       text,
       showFont
@@ -113,7 +118,7 @@ class MMText extends React.Component {
    *  - @url https://github.com/greenlikeorange/knayi-myscript
    *
    */
-  _convertWithKnayi = () => {
+  _convertWithKnayi() {
     const {
       text,
       showFont,
