@@ -1,6 +1,6 @@
 {
   "name": "react-mm-text",
-  "version": "0.0.1-rc1",
+  "version": "0.0.1-rc2",
   "description": "A simple javascript library for myanmar unicode embedded. ",
   "main": "src/index.js",
   "scripts": {
