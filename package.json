@@ -6,6 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lwinkyawmyat/react-mm-text.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lwinkyawmyat/react-mm-text/issues"
+  },
   "author": "",
   "license": "MIT",
   "devDependencies": {
