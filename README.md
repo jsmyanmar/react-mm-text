@@ -21,7 +21,7 @@ yarn add react-mm-text
 ```javascript
 
 import React from 'react';
-import MMText from 'react--mm-text';
+import MMText from 'react-mm-text';
 
 class AppExample extends React.Component {
 
