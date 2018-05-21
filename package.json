@@ -1,6 +1,6 @@
 {
   "name": "react-mm-text",
-  "version": "0.0.1-rc3",
+  "version": "0.0.1",
   "description": "A small react component library to solve the complex myanmar font problem.",
   "main": "src/index.js",
   "scripts": {
@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lwinkyawmyat/react-mm-text.git"
+    "url": "https://github.com/jsmyanmar/react-mm-text.git"
   },
   "bugs": {
-    "url": "https://github.com/lwinkyawmyat/react-mm-text/issues"
+    "url": "https://github.com/jsmyanmar/react-mm-text/issues"
   },
   "author": "",
   "license": "MIT",
