@@ -2,28 +2,28 @@ import React, { Component } from 'react';
 import Select from 'react-select';
 import { connect } from 'react-redux';
 
-import { convertLibrarySelect } from './../../actions/LibrariesActions';
+import { showFontSelect } from './../../actions/LibrariesActions';
 import 'react-select/dist/react-select.css';
 
-class SelectorLayout extends Component {
+class ShowFontSelector extends Component {
 
   handleChange = (selectedOption) => {
-    this.props.dispatch(convertLibrarySelect(selectedOption.value));
+    this.props.dispatch(showFontSelect(selectedOption.value));
   }
 
   render() {
-    const { library } = this.props.convertLibrary;
+    const { font } = this.props.showFont;
     const options = [
-      { value: 'rabbit', label: 'Rabbit' },
-      { value: 'knayi', label: 'Knayi' },
+      { value: 'unicode', label: 'Unicode' },
+      { value: 'zawgyi', label: 'Zawgyi' },
     ];
 
     return (
       <div>
-        <h4> Conveter library </h4>
+        <h4> Font </h4>
         <Select
           name="form-field-name"
-          value={library}
+          value={font}
           onChange={this.handleChange}
           clearable={false}
           options={options}
@@ -35,8 +35,8 @@ class SelectorLayout extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    convertLibrary: state.convertLibrary
+    showFont: state.showFont
   }
 }
 
-export default connect(mapStateToProps)(SelectorLayout);
+export default connect(mapStateToProps)(ShowFontSelector);

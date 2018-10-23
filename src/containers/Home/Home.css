@@ -1,14 +1,20 @@
 
-.Home {
+.Home-layout-body {
   flex: 1;
   flex-direction:  row;
   display: flex;
   height: 100%;
+  margin: 0 1rem;
 }
 
 .Home-layout {
   flex: 1;
+  flex-direction: column;
   display: flex;
+}
+
+.Home-layout-output {
   justify-content: center;
   align-items: center;
+  padding: 3em;
 }

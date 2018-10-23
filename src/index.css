@@ -3,10 +3,17 @@ body,
 #root {
   height: 100%;
   min-height: 100%;
+  background-image: linear-gradient(to top, #060000, #040000, #030000, #010000, #000000);
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #F0F0F0;
+  margin: 0;
+  padding: 5px;
 }

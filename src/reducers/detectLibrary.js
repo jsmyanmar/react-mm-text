@@ -1,13 +1,13 @@
 /* eslint-disable */
 
 const initialState = {
-  library: 'rabbit'
+  library: 'myanmar-tools'
 };
 
-const convertLibrary = (state = initialState, action) => {
+const detectLibrary = (state = initialState, action) => {
 
   switch (action.type) {
-    case 'CONVERT_LIBRARY_SELECT': {
+    case 'DETECT_LIBRARY_SELECT': {
       return {
         library: action.library
       }
@@ -16,6 +16,7 @@ const convertLibrary = (state = initialState, action) => {
   }
 
   return state;
+
 };
 
-export default convertLibrary;
+export default detectLibrary;

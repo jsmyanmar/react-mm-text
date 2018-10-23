@@ -1,0 +1,13 @@
+.Header-layout {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  background: #060606;
+}
+
+.Header-title {
+  color: #F0F0F0;
+}
