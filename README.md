@@ -1,4 +1,4 @@
-# React Myanmar Text
+# React Myanmar Text - [Demo](https://jsmyanmar.github.io/react-mm-text/)
 A small react component library to solve the complex myanmar font problem.
 
 ---
@@ -30,7 +30,7 @@ class AppExample extends React.Component {
       <div>
         <p>
           <MMText
-            text={"ဘယ်အ‌ရောင်ကို နှစ်သက်လဲလို့‌ မေးလာလျှင် အဖြူရောင်ကိုသာ ‌ဖြေရပါလိမ့်မယ်။"}
+            text={"သီဟိုဠ်မှ ဉာဏ်ကြီးရှင်သည် အာယုဝဍ်ဎနဆေးညွှန်းစာကို ဇလွန်ဈေးဘေးဗာဒံပင်ထက် အဓိဋ္ဌာန်လျက် ဂဃနဏဖတ်ခဲ့သည်။ ယေဓမ္မာ ဟေတုပ္ပဘဝါ တေသံ ဟေတုံ တထာဂတော အာဟ တေသဉ္စ ယောနိရောဓေါ ဧဝံ ဝါဒီ မဟာသမဏော။"}
             showFont={"unicode"}
             conveter={"rabbit"}
             detector={"knayi"}
