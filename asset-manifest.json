@@ -1,6 +1,15 @@
 {
-  "main.css": "static/css/main.1a3636ae.css",
-  "main.css.map": "static/css/main.1a3636ae.css.map",
-  "main.js": "static/js/main.25767dcf.js",
-  "main.js.map": "static/js/main.25767dcf.js.map"
+  "main.css": "/react-mm-text/static/css/main.f150ba0d.chunk.css",
+  "main.js": "/react-mm-text/static/js/main.fca90e72.chunk.js",
+  "main.js.map": "/react-mm-text/static/js/main.fca90e72.chunk.js.map",
+  "static/css/1.15273ed5.chunk.css": "/react-mm-text/static/css/1.15273ed5.chunk.css",
+  "static/js/1.833c678f.chunk.js": "/react-mm-text/static/js/1.833c678f.chunk.js",
+  "static/js/1.833c678f.chunk.js.map": "/react-mm-text/static/js/1.833c678f.chunk.js.map",
+  "runtime~main.js": "/react-mm-text/static/js/runtime~main.8842e7b8.js",
+  "runtime~main.js.map": "/react-mm-text/static/js/runtime~main.8842e7b8.js.map",
+  "static/css/1.15273ed5.chunk.css.map": "/react-mm-text/static/css/1.15273ed5.chunk.css.map",
+  "static/css/main.f150ba0d.chunk.css.map": "/react-mm-text/static/css/main.f150ba0d.chunk.css.map",
+  "index.html": "/react-mm-text/index.html",
+  "precache-manifest.d18ae475699016a74f4778b0ca1edc16.js": "/react-mm-text/precache-manifest.d18ae475699016a74f4778b0ca1edc16.js",
+  "service-worker.js": "/react-mm-text/service-worker.js"
 }
