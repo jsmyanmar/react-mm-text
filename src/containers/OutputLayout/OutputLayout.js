@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import MMText from 'react-mm-text'
+import MMText from './../../components/MMText/MMText';
 import './OutputLayout.css';
 
 class OutputLayout extends Component {
-
-
   render() {
     const { text } = this.props.mainTextValue;
     const { convertLibrary, detectLibrary, showFont } = this.props;

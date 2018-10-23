@@ -1,13 +1,19 @@
 
-import { createStore, applyMiddleware, compose } from 'redux';
-import logger from 'redux-logger';
+import { createStore, applyMiddleware } from 'redux';
+import { createLogger } from 'redux-logger';
+import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 import reducers from './../reducers';
+
+const logger = createLogger({
+    /* https://github.com/evgenyrodionov/redux-logger */
+    collapsed: true,
+    diff: true
+});
 
 const store = createStore(
   reducers,
-  compose(
-    applyMiddleware(logger),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  composeWithDevTools(
+    applyMiddleware(logger)
   )
 )
 
