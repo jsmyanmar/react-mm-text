@@ -28,21 +28,31 @@ class MMText extends React.Component {
     this._convertWithKnayi = this._convertWithKnayi.bind(this);
   }
 
-  componentWillMount() {
+  async componentWillMount() {
     const {
       text,
       detector,
-    } = this.props;
-
-    this._fontDetect(text, detector);
-  }
-
-  componentDidMount() {
-    const {
       conveter
     } = this.props;
 
-    this._checkConveter(conveter);
+    await this._fontDetect(text, detector);
+    await this._checkConveter(conveter);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if((nextProps.text !== this.props.text) ||
+       (nextProps.conveter !== this.props.conveter) ||
+       (nextProps.detector !== this.props.detector) ||
+       (nextProps.showFont !== this.props.showFont)
+      ) {
+      this.setState({
+        showText: null,
+        inputFont: null,
+      }, async () => {
+        await this._fontDetect(nextProps.text, nextProps.detector);
+        await this._checkConveter(nextProps.conveter);
+      });
+    }
   }
 
 

@@ -1,6 +1,6 @@
 {
   "name": "react-mm-text",
-  "version": "0.0.1",
+  "version": "0.0.1-rc.1",
   "description": "A small react component library to solve the complex myanmar font problem.",
   "main": "src/index.js",
   "scripts": {
