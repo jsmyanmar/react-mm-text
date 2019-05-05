@@ -1,25 +1,55 @@
 {
-  "parser": "babel-eslint",
-  "root": true,
-  "extends": "airbnb",
-  "env": {
-    "es6": true,
-    "browser": true,
-    "node": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true,
-      "modules": true,
-      "impliedStrict": true
-    },
-  },
-  "rules": {
-    "no-invalid-this": 2,
-
-    "strict": [0, "global"],
-    "global-strict": [0, "always"],
-  }
+	"parser": "babel-eslint",
+	"root": true,
+	"extends": "airbnb",
+	"env": {
+		"es6": true,
+		"browser": true,
+		"node": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true,
+			"modules": true,
+			"impliedStrict": true
+		}
+	},
+	"rules": {
+		"no-invalid-this": 2,
+		"strict": [
+			0,
+			"global"
+		],
+		"global-strict": [
+			0,
+			"always"
+		],
+		"comma-dangle": [
+			"error",
+			"never"
+		],
+		"indent": [
+			2,
+			"tab"
+		],
+		"no-tabs": 0,
+		"camelcase": 0,
+		"import/no-extraneous-dependencies": [
+			"error",
+			{
+				"devDependencies": true
+			}
+		],
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [
+					".js",
+					".jsx"
+				]
+			}
+		],
+	}
 }

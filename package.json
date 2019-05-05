@@ -1,10 +1,13 @@
 {
   "name": "react-mm-text",
-  "version": "0.0.1-rc.1",
+  "version": "0.0.1-rc.2",
   "description": "A small react component library to solve the complex myanmar font problem.",
-  "main": "src/index.js",
+  "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src/*.js",
+    "test": "jest",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -13,18 +16,40 @@
   "bugs": {
     "url": "https://github.com/jsmyanmar/react-mm-text/issues"
   },
-  "author": "",
+  "homepage": "https://github.com/jsmyanmar/react-mm-text",
+  "author": "lwinkyawmyat <mglwinkyawmyat@outlook.com>",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>src/enzyme.js"
+    ]
+  },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.9.0",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^8.0.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.4.0"
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^24.8.0",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.4.4",
     "knayi-myscript": "^2.2.0",
     "myanmar-tools": "^1.0.3",
     "prop-types": "^15.6.1",

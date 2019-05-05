@@ -1,5 +1,11 @@
 # React Myanmar Text - [Demo](https://jsmyanmar.github.io/react-mm-text/)
-A small react component library to solve the complex myanmar font problem.
+
+[travis-image]: https://travis-ci.org/jsmyanmar/react-mm-text.svg?branch=master
+[travis-url]: https://travis-ci.org/jsmyanmar/react-mm-text
+
+[![Build Status][travis-image]][travis-url]
+
+A small react component library to render unicode standard or zawgyi font.
 
 ---
 
@@ -58,6 +64,12 @@ class AppExample extends React.Component {
 | `detector` | `String` | `myanmar-tools` | The detector name to detect font. Only one of `myanmar-tools` and `knayi` are accept. The default value is `myanmar-tools`. |
 
 ---
+
+## Todo
+
+  - [ ] Add more docs and contributing guide
+  - [ ] Add example
+  - [ ] Add more testing details
 
 ## License
 The [MIT](./LICENSE) licensed.

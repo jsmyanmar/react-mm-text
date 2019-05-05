@@ -1,0 +1,11 @@
+# .npmignore
+src
+.github
+.babelrc
+.editorconfig
+.eslintrc
+.gitignore
+.npmignore
+webpack.config.js
+README.md
+CONTRIBUTING.md
